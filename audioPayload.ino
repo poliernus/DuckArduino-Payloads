@@ -62,14 +62,16 @@ void setup()
 
   typeKey(KEY_RETURN);
 
+  // Info: https://learn.microsoft.com/en-us/windows/win32/wmp/controls-object
   Keyboard.print("oPlayer.controls.play");
 
   typeKey(KEY_RETURN);
 
-  Keyboard.print("While oPlayer.playState <> 1 ' 1 = Stopped");
+   Keyboard.print("While oPlayer.playState <> 1 ' 1 = Stopped");
 
   typeKey(KEY_RETURN);
 
+  // Makes the WScript sleep 
   Keyboard.print("WScript.Sleep 100");
 
   typeKey(KEY_RETURN);
@@ -78,9 +80,9 @@ void setup()
 
   typeKey(KEY_RETURN);
 
-  Keyboard.print("oPlayer.close");
+//  Keyboard.print("oPlayer.close");
 
-  typeKey(KEY_RETURN);
+//  typeKey(KEY_RETURN);
 
   Keyboard.print("Wend");
 
@@ -94,22 +96,26 @@ void setup()
 
   typeKey(KEY_RETURN);
 
-  Keyboard.print("copy con volup.vbs");
+  // Creates script for the volume up loop
+ /* Keyboard.print("copy con volup.vbs");
 
   typeKey(KEY_RETURN);
 
   Keyboard.print("do");
 
   typeKey(KEY_RETURN);
-
+  
+  // Creates a WshShell script
   Keyboard.print("Set WshShell = CreateObject(\"WScript.Shell\")");
 
   typeKey(KEY_RETURN);
 
+  // Presses the keys for turning the volume up
   Keyboard.print("WshShell.SendKeys(chr(&hAF))");
 
   typeKey(KEY_RETURN);
 
+  // Makes it sleep for 10 just for the loop to work correctly
   Keyboard.print("WScript.Sleep 10");
 
   typeKey(KEY_RETURN);
@@ -123,8 +129,10 @@ void setup()
   Keyboard.releaseAll();
 
   typeKey(KEY_RETURN);
-
-  Keyboard.print("start mainMenu.vbs && volup.vbs");
+  */
+  
+//  Keyboard.print("start mainMenu.vbs && volup.vbs");
+  Keyboard.print("start mainMenu.vbs");
 
   typeKey(KEY_RETURN);
 
