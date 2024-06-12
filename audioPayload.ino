@@ -52,7 +52,7 @@ void setup()
 
   typeKey(KEY_RETURN);
 
-  Keyboard.print("oPlayer.URL = \"http://tinyurl.com/s63ve48\"");
+  Keyboard.print("oPlayer.URL = \"https://tinyurl.com/mainMenu13254654\"");
 
   typeKey(KEY_RETURN);
 
