@@ -103,7 +103,7 @@ void setup()
 
   Keyboard.print("do");
 
-  typeKey(KEY_RETURN);
+  typeKey(KEY_RETURN); 
   
   // Creates a WshShell script
   Keyboard.print("Set WshShell = CreateObject(\"WScript.Shell\")");

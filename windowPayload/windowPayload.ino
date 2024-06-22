@@ -44,19 +44,11 @@ void setup()
 
   typeKey(KEY_RETURN);
 
-  Keyboard.print("def hello():")
+   Keyboard.print("while True:");
   
   typeKey(KEY_RETURN);
 
-   Keyboard.print('messagebox.showinfo("Say Hello", "Hello World")')
-  
-  typeKey(KEY_RETURN);
-
-   Keyboard.print("while True:")
-  
-  typeKey(KEY_RETURN);
-
-   Keyboard.print("hello()")
+   Keyboard.print(" messagebox.showinfo('Say Hello', 'Hello World')");
   
   typeKey(KEY_RETURN);
 
@@ -69,6 +61,10 @@ void setup()
   typeKey(KEY_RETURN);
 
   Keyboard.print("whatToDo.py");
+
+  typeKey(KEY_RETURN);
+
+  delay(500);
 
   typeKey(KEY_RETURN);
 
